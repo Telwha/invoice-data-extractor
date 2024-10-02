@@ -16,11 +16,10 @@ from gspread.exceptions import APIError
 from io import BytesIO
 
 # Constants
-# DRIVE_FOLDER_ID = '1A_91srZiGU1_VWjgcA3cBLyZElzk40SY'
-DRIVE_FOLDER_ID = '1kJVADTGHJ-F4akQivAZoeGPxCdEV_clO'
-SHEET_ID = '1SH5bjyi_dAZobEfAP5T8Cxc3B9jnkiFzmIRYGHL89x8'
-CREDENTIALS_FILE = 'credentials.json'
-TOKEN_FILE = 'token.json'
+DRIVE_FOLDER_ID = 'google-drive-folder-id-where-your-invoices-are-stored'
+SHEET_ID = '<google-sheet-id-where-the-data-is-to-be-inserted>'
+CREDENTIALS_FILE = '<path-to-your-credentials.json>'
+TOKEN_FILE = 'path-to-your-token.json'
 PORT = 8080
 
 
