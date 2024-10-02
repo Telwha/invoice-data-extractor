@@ -1,6 +1,5 @@
 import os
 import re
-import json
 from datetime import datetime
 
 import pymupdf
@@ -10,9 +9,6 @@ from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
-from googleapiclient.http import MediaIoBaseDownload
-import gspread
-from gspread.exceptions import APIError
 from io import BytesIO
 
 # Constants
@@ -184,7 +180,7 @@ def main():
 
         try:
             date, cost, refund, usd, duties_match = extract_data_from_file(file_id, mime_type, drive_service)
-            data_to_insert.append([date, file_name, cost, invoice_link, refund, usd, duties_match])
+            data_to_insert.append([date, file_name, invoice_link, cost, refund, usd, duties_match])
         except Exception as e:
             print(f"Error processing file {file_name}: {e}")
 
