@@ -1,5 +1,6 @@
 
 # 🧾 Invoice Data Extractor
+Made using ChatGPT and Claude ✨
 
 This Python tool extracts key information from invoice documents uploaded to a Google Drive folder, such as:
 
